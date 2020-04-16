@@ -1,5 +1,7 @@
 # Certificate Expiry Monitor
 
+Notice: https://raymii.org/s/blog/Cancellation_notice_for_cipherlist_ssldecoder_and_certificatemonitor.html
+
 ## About
 
 Certificate Expiry Monitor is an open source monitoring tool for certificates. It monitors websites and emails you when the certificates are about to expire.
@@ -52,7 +54,7 @@ And `$current_link`, which may or may not be the same. It is used in the confirm
 
 Set up the cronjob to run once a day:
 
-    # /etc/cron.d/certificate-exipry-monitor
+    # /etc/cron.d/certificate-expiry-monitor
     1 1 * * * $wwwuser /path/to/php /var/www/html/certificate-expiry-monitor/cron.php >> /var/log/certificate-expiry-monitor.log 2>&1
 
 
